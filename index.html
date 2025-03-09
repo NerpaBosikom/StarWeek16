@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+    <link rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Калькулятор стоимости авто</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <label>
+        Марка автомобиля:
+        <select id="car-brand">
+          <option value="Reno">Reno</option>
+          <option value="Opel">Opel</option>
+          <option value="Mazda">Mazda</option>
+          <option value="Jaguar">Jaguar</option>
+        </select>
+      </label>
+
+      <label>
+        Модель автомобиля:
+        <select id="car-model"></select>
+      </label>
+
+      <p>Тип топлива:</p>
+
+      <div class="radio-group">
+        <label
+          ><input type="radio" name="fuel-type" value="petrol" checked />
+          Бензин</label
+        >
+        <label
+          ><input type="radio" name="fuel-type" value="diesel" /> Дизель</label
+        >
+        <label><input type="radio" name="fuel-type" value="gas" /> Газ</label>
+        <label
+          ><input type="radio" name="fuel-type" value="electric" />
+          Электричество</label
+        >
+      </div>
+
+      <label>
+        Объем двигателя (литры):
+        <input
+          type="number"
+          id="engine-volume"
+          min="1.1"
+          max="3.5"
+          step="0.1"
+          placeholder="1.1 - 3.5"
+        />
+      </label>
+
+      <div class="radio-group">
+        <label><input type="radio" name="condition" value="new" /> Новый</label>
+        <label
+          ><input type="radio" name="condition" value="used" />
+          Подержанный</label
+        >
+      </div>
+
+      <div id="owners-block" style="display: none">
+        <div class="radio-group">
+          <label
+            ><input type="radio" name="owners" value="1-2" /> 1-2
+            владельца</label
+          >
+          <label
+            ><input type="radio" name="owners" value="3+" /> Более 3-х
+            владельцев</label
+          >
+        </div>
+      </div>
+
+      <div id="total-price">Предварительный расчёт: $10000</div>
+      <p id="error-message">Выберите объём двигателя и способ оплаты!</p>
+
+      <p>Способ оплаты:</p>
+      <div class="radio-group">
+        <label><input type="radio" name="payment" value="card" /> Картой</label>
+        <label
+          ><input type="radio" name="payment" value="cash" /> Наличными</label
+        >
+        <label
+          ><input type="radio" name="payment" value="invoice" /> Счёт на юр.
+          лицо</label
+        >
+      </div>
+      <div class="btn">
+        <button id="calculate-btn">Рассчитать</button>
+        <button id="reset-btn">Сброс</button>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  margin-block: 20px;
+  background: #f0f0f3;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px #d1d1d1, -10px -10px 20px #ffffff;
+  width: 500px;
+}
+
+select,
+input[type="text"] {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #f0f0f3;
+  box-shadow: inset 5px 5px 10px #d1d1d1, inset -5px -5px 10px #ffffff;
+}
+
+input[type="number"] {
+  display: block;
+  margin: 10px 0;
+  width: 95%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #f0f0f3;
+  box-shadow: inset 5px 5px 10px #d1d1d1, inset -5px -5px 10px #ffffff;
+}
+
+.radio-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-block: 10px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  background: #f0f0f3;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #d1d1d1, -5px -5px 10px #ffffff;
+}
+
+.radio-group input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #f0f0f3;
+  box-shadow: inset 5px 5px 10px #d1d1d1, inset -5px -5px 10px #ffffff;
+  margin-right: 5px;
+}
+
+.radio-group input[type="radio"]:checked {
+  /* background: linear-gradient(145deg, #ffffff, #d1d1d1); */
+  /* box-shadow: none; */
+  box-shadow: 5px 5px 10px #d1d1d1, -5px -5px 10px #ffffff;
+}
+
+#total-price {
+  font-size: 1.4em;
+  text-align: center;
+  margin-block: 40px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f0f0f3;
+  box-shadow: inset 5px 5px 10px #d1d1d1, inset -5px -5px 10px #ffffff;
+}
+
+.btn {
+display: flex;
+justify-content: space-between;
+align-items:center ;
+}
+
+button {
+  display: inline-flex;
+  justify-content:space-between;
+  align-items: center;
+  background: #f0f0f3;
+  margin-top: 20px;
+  padding: 10px 100px;
+  border-radius: 10px;
+  border-color: black;
+  box-shadow: 5px 5px 10px #d1d1d1, -5px -5px 10px #ffffff;
+}
+
+#reset-btn {
+  padding-inline: 40px;
+}
+
+button:active {
+  /* border-color: black; */
+  background: #f0f0f3;
+  box-shadow: inset 5px 5px 10px #d1d1d1, inset -5px -5px 10px #ffffff;
+}
+
+#error-message {
+  color: red; 
+  display: none;
+}
